@@ -9,4 +9,7 @@ import java.util.List;
 public interface NotePadRepository extends MongoRepository<NotePad,String> {
     NotePad findNotePadsByNoteId(String noteId);
     List<NotePad> findNotePadsByUserId(String userId);
+
+    NotePad findNotePadByNoteIdAndUserId(String noteId, String userId);
 }
+

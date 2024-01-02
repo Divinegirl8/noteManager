@@ -5,7 +5,7 @@ import africa.note.manager.data.models.NotePad;
 import java.util.List;
 
 public interface NotePadService {
-    void addNote(String userId, String noteId, String noteText);
+    NotePad addNote(String userId, String noteId, String noteText);
     NotePad editNote(String userId, String noteId, String newMessage, boolean appendMessage);
 
     NotePad findNote(String userId, String noteId);
